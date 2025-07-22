@@ -1,4 +1,11 @@
-
+@font-face{
+    font-family: 'lnconsolata';
+    src:url('../font/Inconsolata-VariableFont_wdth\,wght\ \(1\).woff2') format(woff2),
+    url('../font/Inconsolata-VariableFont_wdth\,wght\ \(1\).woff') format(woff);
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     width: 70%;
     margin:0 auto;
@@ -10,6 +17,7 @@ img{
 ul{
     list-style-type: none;       
     padding-inline-start: 0;
+    font-family:  'lnconsolata';
 }
 h2{
      margin: 0 auto;
@@ -43,7 +51,7 @@ a{
     
 }
 .hero-contact{
-    background-image: url(../images/first-bg\ 1\ \(1\).jpg);
+    background-image: url(../images/first-bg\ 1.svg);
      background-repeat:no-repeat;
     background-size: cover;
     background-position:top right;
