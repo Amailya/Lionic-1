@@ -162,12 +162,19 @@ right:5px;
     background-color: var(--focus-background-button);
 }
 /* services*/
+.services{
+    border:1px solid #DADADA;
+    margin-top:87px;
+    transition: 0.5s ease;
+}
+.services:hover{
+    border-color: var(--hover-color-nav);
+}
 .services-list-item{
    text-align: center;
    max-width: 132px;
    max-height:47px;
    font-size: 36px;
-   padding-top:87px;
    padding-bottom: 21px;
 }
 .services-card{
@@ -339,6 +346,7 @@ margin-top: 42px;
     font-size: 17px;
 }
 /*contact*/
+
 .contacts-contant{
   display: flex;
   align-items: center;
@@ -351,7 +359,7 @@ margin-top: 42px;
 }
 .contacts-title{
     font-size: 25px;
-    margin-top: 25px;
+    margin-top: 87px;
 }
 .title{
     font-size: 30px;
