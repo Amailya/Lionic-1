@@ -527,3 +527,9 @@ background-color: var(--hover-background-button);
 .footer-img:hover path{
   fill: var(--hover-background);
 }
+.divider {
+  height: 1px;
+  background-color: #ccc; 
+  border: none;
+  margin: 50px 0;
+}
