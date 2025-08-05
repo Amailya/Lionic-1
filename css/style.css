@@ -1,25 +1,25 @@
 @font-face{
-   font-family:'Condensed-light';
-   src:url('../font/OpenSans_Condensed-Light.woff2')format(woff2),
-   url('../font/OpenSans_Condensed-Light.woff')format(woff);
+   font-family:'OpensSans-light';
+   src: url('../font/OpenSans-Light.woff2') format(woff2)
+   url('../font/OpenSans-Light.woff')format(woff);
    font-display: swap;
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face{
-     font-family:'SemiCondensed-Bold' ;
-   src:url('../font/OpenSans_Condensed-Regular.woff2')format(woff2)
-   url('../font/OpenSans_Condensed-Regular.woff')format(woff);
+     font-family:'OpenSans-Regular' ;
+   src:url('../font/OpenSans-Regular.woff2')format(woff2)
+   url('../font/OpenSans-Regular.woff')format(woff);
    font-display: swap;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face{
-    font-family:'SemiCondensed-Bold';
-   src:url('../font/OpenSans_SemiCondensed-Bold.woff2')format(woff2)
-   url('..//font/OpenSans_SemiCondensed-Bold.woff')format(woff);
+    font-family:'OpenSemibold';
+   src:url('../font/OpenSans-SemiBold.woff2')format(woff2)
+   url('../font/OpenSans-SemiBold.woff')format(woff);
    font-display: swap;
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -35,22 +35,21 @@ img{
 ul{
     list-style-type: none;       
     padding-inline-start: 0;
-   font-family:'SemiCondensed-Bold';
+    font-weight: 600;
 }
 h2{
-     margin: 0 auto;
-     font-family:'SemiCondensed-Bold' ;
+     font-weight: 600;
 }
 a{
     color: inherit;
     text-decoration: none;  
-   font-family:'SemiCondensed-Bold' ;
 }
 h3{
-    font-family:'Condensed-light' ;
+    font-weight: 300;
+
 }
 p{
- font-family:'SemiCondensed-Bold'    
+    font-weight: 400; 
 }
 :root{
     --defualt-bg:#fff;
@@ -78,13 +77,20 @@ p{
     margin-bottom: 20px;
     margin:10px;
 }
-.nav-list-item a:hover {
-  color:var(--hover-color-nav);
-  border-color: #3172B9;
+.nav-list-item a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
 }
-.nav-list-item a:hover{
-    outline: 2px solid #0077ff;
-    transition: 0.5s ease
+.nav-list-item a:hover {
+  border: 1px solid #3172B9;
+  border-radius: 4px;
+}
+.nav-list-item a:focus {
+  color: #3172B9;
+  outline: none;
 }
 .want{
     border-radius: 3px;
@@ -162,20 +168,14 @@ right:5px;
     background-color: var(--focus-background-button);
 }
 /* services*/
-.services{
-    border:1px solid #DADADA;
-    margin-top:87px;
-    transition: 0.5s ease;
-}
-.services:hover{
-    border-color: var(--hover-color-nav);
-}
 .services-list-item{
    text-align: center;
    max-width: 132px;
    max-height:47px;
    font-size: 36px;
    padding-bottom: 21px;
+   margin: 0 auto;
+   padding-top: 87px;
 }
 .services-card{
     text-align: center;
@@ -205,8 +205,8 @@ background-color:#3172B9;
     width: 77px;
 }
 .services-title{
-    margin:27px 40px 15px 40px;
-    font-size:20px ;
+ text-align: center;
+  font-size:20px ;
     line-height: 130%;
       font-family:'SemiCondensed-Bold';
 }
@@ -248,7 +248,6 @@ background-color:#3172B9;
     display: flex;
     align-items: flex-start;
     width: calc(50% - 10px);
-    gap: 20px;
     box-sizing: border-box;
     flex-shrink:0 ;
     border: 1px solid #E4E4E4;
@@ -256,7 +255,7 @@ background-color:#3172B9;
 }
 
 .articles img{
-    width: 120%;
+ max-height:180px;
     border-radius: 8px;
     height: auto;
     flex-shrink: 0;
@@ -268,8 +267,8 @@ background-color:#3172B9;
 .articles-paragraph{
     font-size: 14px;
     color:#7878;
- margin:15px 100px 38px 30px;
- line-height: 150%;
+ margin:5px 30px;
+ line-height:150%;
 }                      
 .contactors{
     font-size: 18px;
@@ -366,6 +365,7 @@ margin-top: 42px;
     color: #111;
     margin-top:19px;
     margin-bottom:30px;
+     font-weight: 600;
 }
 .contact-paragraph{
     font-size: 13px;
@@ -386,7 +386,30 @@ margin-top: 42px;
 .contact-paragraph:hover{
     outline: 2px solid #0077ff;
 }
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-top: 45px;         
+  margin-left: 400px;     
+}
 
+.join-cantant{
+   text-align:  center;
+   margin: 0 auto;
+}
+.form-title{
+font-size:36px;
+color: #1C1C1C;
+margin-top:87px;
+margin-bottom: 22px;
+}
+.join-paragrap{
+font-size: 16px;
+color:#787878;
+margin-top:22px ;
+margin-bottom:30px ;
+}
 .join-cantant{
     text-align: center;
 }
@@ -424,7 +447,7 @@ padding:12px;
   width: 100%;
   box-sizing: border-box;
   color: #787878;
-  transition: 0.3s ease;
+  transition: 1s ease;
 }
 .comment{
     height:140px;
