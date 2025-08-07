@@ -8,18 +8,18 @@
 <link rel="icon" href="images/logo (1).svg">
   </head> 
   <body>
-  <header class="main-header">
-  <img src="./images/logo (1).svg">
-    <nav class="nav-list">
-       <ul class="nav-item-list" tabindex="0">
-         <li class="nav-list-item"><a href="#">Home</a></li>
-         <li class="nav-list-item"><a href="#services">Services</a></li>
-         <li class="nav-list-item"><a href="#artices">Articles</a></li>
-         <li class="nav-list-item"><a href="#clients">Clients</a></li>
-         <li class="nav-list-item"><a href="#Contacts">Contacts</a></li>
-         <li class="nav-list-item"><a href="#Join us">Join us</a></li>
-        </ul>
-        <button class="want">FREE TRIAL</button>
+      <header class="header" role="banner">
+         <img class="brand-logo" src="./images/logo (1).svg" alt="lionic main site logo">
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li ><a href="#home"class="nav-list-item">Home</a></li>
+        <li><a href="#services"class="nav-list-item">Services</a></li>
+        <li ><a href="#articles" class="nav-list-item">Articles</a></li>
+        <li ><a href="#clients"class="nav-list-item">Clients</a></li>
+        <li><a href="#contacts" class="nav-list-item">Contacts</a></li>
+        <li><a href="#join"class="nav-list-item">Join us</a></li>
+        <li><a href="#free-trial" class="want">Free Trial</a></li>
+      </ul>
     </nav>
 </header>
   <main>
@@ -36,7 +36,7 @@
      <button class="primary-2">FREE 30 DAY TRIAL</button>
      <div class="ssl">
      <img src="./images/Group.svg">
-     <p>SSL secured connection</p>
+     <p class="ssl-text">SSL secured connection</p>
      </div>
   </div>
   </section>
@@ -104,7 +104,7 @@
 </section>
   <hr class="divider "/>
   <section id="articles"  >
-  <h3 class="articles-text">articles</h3>
+  <h3 class="articles-text">Articles</h3>
   <div class="articles-list-item">
   <div class="articles-item" >
   <img src="./images/articles-18.jpg" class="articles-img">
@@ -198,10 +198,9 @@
 <img src="./images/clients-3.png"class="client-img">
 <h2 class="client-text" >Robin Soutby</h2>
 </div>
-</div>
 </section>
 <hr class="divider "/>
-  <section id="contacts" >
+  <section id="contacts" tabindex="0">
   <div class="contacts-title">
   <h3>Contacts</h3>
   </div>
@@ -232,55 +231,64 @@
   </div>
   </ul>
    </section>
- <hr class="divider"/>
- <div class="form-list-wrap">
- <section id="Join us">
-    <div class="join-cantant">
-      <h3 class="form-title">Join us</h3>
-      <p class="join-paragrap">Take control of your paid subscriptions today!</p>
-    </div>
-    <div class="form-list">
-      <div>
-        <label for="name"></label>
-        <input type="text" name="name" id="name" placeholder="Name" class="name">
-      </div>
-      <div>
-        <label for="email"></label>
-        <input type="email" name="email" id="email" placeholder="E-mail">
-      </div>
-      <div>
-        <label for="comment"></label>
-        <input type="text"class="comment" name="comment" id="comment" placeholder="Comment">
-      </div>
-    </div>
+   <hr class="divider">
+   <div class="form-list-wrap">
+ <section id="join">
+  <div class="join-content">
+    <h3 class="form-title">Join us</h3>
+    <p class="join-paragraph">Take control of your paid subscriptions today!</p>
+  </div>
 
-    <div class="form-list row-bottom">
-      <div>
-        <label for="phone"></label>
-        <input type="tel" name="telephone" id="tel" placeholder="Phone">
+  <form class="join-form" action="#" method="POST">
+    <div class="form-grid">
+    
+      <div class="left-fields">
+        <div>
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Name" required />
+        </div>
+        <div>
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="Email" required />
+        </div>
+        <div>
+          <label for="phone"></label>
+          <input type="tel" name="phone" id="phone" placeholder="Phone" required />
+        </div>
+        <div>
+          <label for="country"></label>
+          <select name="country" id="country" required>
+            <option value="" selected disabled>Country</option>
+            <option value="UK">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+            <option value="ES">Spain</option>
+            <option value="EE">Estonia</option>
+          </select>
+        </div>
       </div>
-      <div>
-        <label for="country"></label>
-        <select name="country" id="country">
-          <option value="United Kingdom">United Kingdom</option>
-          <option value="United States">United States</option>
-          <option value="France">France</option>
-          <option value="Germany">Germany</option>
-          <option value="Spain">Spain</option>
-          <option value="Estonia">Estonia</option>
-        </select>
-      </div>
-     <div class="button">
-  <button class="form-wrap">GET STARTED</button>
-  <div class="button-block">
-    <img src="./images/Check.svg">
-    <p>I agree with the user agreement</p>
+
+  
+      <div class="right-fields">
+        <div>
+          <label for="comment"></label>
+          <textarea id="comment" name="comment" placeholder="Comment"></textarea>
+        </div>
+       <div class="form-footer">
+  <button type="submit" class="form-submit">GET STARTED</button>
+  <div class="checkbox-area">
+    <input type="checkbox" id="agree" required />
+    <label for="agree">
+      I agree with the <a href="#">user agreement</a>
+    </label>
   </div>
 </div>
     </div>
-</form>
+  </form>
 </section>
 </main>
+  
   <footer class="footer-wrap">
   <section class="footer-text">
   <img src="./images/logo (1).svg"> 
@@ -304,7 +312,7 @@
  </a>
 </li>
 <li>
- <a href="#"><svg width="17"class="footer-img" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <a href="#"><svg width="17"class="footer-img-2" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_9_0)">
 <path d="M3.85973 15.999V5.20386H0.215035V15.999H3.85973ZM2.03785 3.72907C3.30882 3.72907 4.09994 2.90013 4.09994 1.86422C4.07626 0.804959 3.30887 -0.000976562 2.06197 -0.000976562C0.815269 -0.000976562 0 0.804975 0 1.86422C0 2.90018 0.790923 3.72907 2.01406 3.72907H2.03774H2.03785ZM5.87706 15.999H9.52175V9.97048C9.52175 9.64784 9.54543 9.32554 9.64168 9.0949C9.90516 8.45027 10.5049 7.78262 11.5117 7.78262C12.8305 7.78262 13.3582 8.77258 13.3582 10.2238V15.999H17.0026V9.8091C17.0026 6.49325 15.2045 4.95042 12.8065 4.95042C10.8404 4.95042 9.9771 6.03237 9.49751 6.76928H9.52184V5.20363H5.87714C5.92497 6.21659 5.87714 15.9988 5.87714 15.9988L5.87706 15.999Z" fill="black"/>
 </g>
@@ -317,10 +325,13 @@
 </a>
 </li>
 <li>
-<a href="#"><svg width="24"class="footer-img" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.40039 0.5H21.5996C22.6744 0.5 23.5 1.31855 23.5 2.25V15.75C23.5 16.6814 22.6744 17.5 21.5996 17.5H2.40039C1.32565 17.5 0.5 16.6814 0.5 15.75V2.25C0.5 1.31855 1.32565 0.5 2.40039 0.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.8478 1.0625L12 9.93794L1.15222 1.0625" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<a href="#">
+  <svg width="24" class="footer-img-3" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.40039 0.5H21.5996C22.6744 0.5 23.5 1.31855 23.5 2.25V15.75C23.5 16.6814 22.6744 17.5 21.5996 17.5H2.40039C1.32565 17.5 0.5 16.6814 0.5 15.75V2.25C0.5 1.31855 1.32565 0.5 2.40039 0.5Z"
+      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M22.8478 1.0625L12 9.93794L1.15222 1.0625"
+      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
 </a>
 </li>
 </ul>
