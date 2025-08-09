@@ -350,14 +350,13 @@ border-top: 1px solid #dadada;
   margin-top: 42px;
   flex: 1;
 }
-
 .client-title {
   display: flex;
   align-items: center;
   border-top: 1px solid #E4E4E4;
   padding: 25px 30px;
+  margin: 0 10px; 
 }
-
 .client-text-title {
   display: flex;
   flex-direction: column;
