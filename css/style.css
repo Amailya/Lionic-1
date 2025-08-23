@@ -770,3 +770,8 @@ stroke:#71A7E2;
     flex-wrap: wrap;
   }
 }
+@media (min-width: 860px) {
+  .mobile-nav{
+    display: none;
+  }
+}
