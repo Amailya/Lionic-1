@@ -586,6 +586,7 @@ select:open::picker-icon {
     align-items: center;
     flex-wrap: wrap;          
     gap: 20px;
+    height: 90px;
 }
 
 .footer-text {
@@ -605,7 +606,6 @@ select:open::picker-icon {
     display: flex;
     gap: 20px;
     list-style: none;
-    margin-bottom: 20px;
     padding: 0;
 }
 
