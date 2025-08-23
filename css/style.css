@@ -586,7 +586,6 @@ select:open::picker-icon {
     align-items: center;
     flex-wrap: wrap;          
     gap: 20px;
-    height: 90px;
 }
 
 .footer-text {
@@ -607,6 +606,7 @@ select:open::picker-icon {
     gap: 20px;
     list-style: none;
     padding: 0;
+    margin-bottom:30px;
 }
 
 .footer-list li a {
@@ -651,8 +651,12 @@ stroke:#71A7E2;
 
 /* responsive design */
 @media (max-width: 360px) {
-   .nav-list{
+   .nav-list {
     display: none;
+  }
+
+  .burger-button {
+    margin-left: 15px;
   }
 .header{
   margin-left:15px;
@@ -764,10 +768,5 @@ stroke:#71A7E2;
 
   .footer-list {
     flex-wrap: wrap;
-  }
-}
-@media (min-width: 360px) {
-  .mobile-nav{
-    display: none;
   }
 }
