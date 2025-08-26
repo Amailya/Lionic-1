@@ -21,13 +21,12 @@
         <li><a href="#join"    class="nav-list-item">Join us</a></li>
         <button class="want">FREE TRIAL</button>
       </ul>
-         <div class="mobile-nav">
+       <div class="mobile-nav">
        <button class="want">FREE TRIAL</button>
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="#3172B9"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 14C10 13.4477 10.4477 13 11 13H29C29.5523 13 30 13.4477 30 14C30 14.5523 29.5523 15 29 15H11C10.4477 15 10 14.5523 10 14ZM10 20C10 19.4477 10.4477 19 11 19H29C29.5523 19 30 19.4477 30 20C30 20.5523 29.5523 21 29 21H11C10.4477 21 10 20.5523 10 20ZM10 26C10 25.4477 10.4477 25 11 25H29C29.5523 25 30 25.4477 30 26C30 26.5523 29.5523 27 29 27H11C10.4477 27 10 26.5523 10 26Z" fill="#3172B9"/>
                 </svg>            
-        </button>
          </div>
     </nav>
 </header>
@@ -120,18 +119,18 @@
       <img src="./images/articles-18.jpg" class="articles-img">
       <div class="articles-contant">
         <p class="articles-wraper">15 Nov 2021</p>
-        <h2 class="contactors">Jurisdiction</h2>
+        <h2 class="contactors"><a hef="#">Jurisdiction</a></h2>
          <p class="articles-paragraph">
         Lorem ipsum dolor sit amet, consectetuer
          adipiscing elit, sed diam nonummy
        </p>
    </div> 
  </div>
-  <div class="articles-item">
+  <div class="articles-item" >
     <img src="./images/articles- 20 (1).jpg" class="articles-img">
     <div class="articles-contant">
        <p class="articles-wraper">28 Nov 2021</p>
-       <h2 class="contactors">Consulting</h2>
+       <h2 class="contactors"> <a href="#">Consulting</a></h2>
        <p class="articles-paragraph">
        Lorem ipsum dolor sit amet,
        consectetuer adipiscing elit,
@@ -143,7 +142,7 @@
     <img src="./images/articles 23.png" class="articles-img">
     <div class="articles-contant">
       <p class="articles-wraper">29 Nov 2021</p>
-      <h2 class="contactors">Rights and obligatio</h2>
+      <h2 class="contactors"> <a href="#">Rights and obligatio</a></h2>
       <p class="articles-paragraph">
       Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit,
@@ -155,7 +154,7 @@
      <img src="./images/articles-24 (1).jpg" class="articles-img">
     <div class="articles-contant">
        <p class="articles-wraper">11 Dec 2021</p>
-       <h2 class="contactors">Contractors</h2>
+       <h2 class="contactors"><a href="#">Contractors</a></h2>
        <p class="articles-paragraph">
        Lorem ipsum dolor sit amet, 
        consectetuer adipiscingc elit, 
@@ -217,35 +216,29 @@
   </div>
 </section>
 <hr class="divider"/>
-  <section id="contacts" class="contact-section"  aria-labelledby="contact-heading">
-  <h1 class="contact-title">Contacts</h1>
-   <div class="contacts-contant">
-     <div class="contact-wrap-row">
-      <ul>
-       <li><img src="./images/contact- (1).svg"></li>
-       <li class="title">Visit Us</li>
-       <li class="contact-paragraph"><a href="#">Duis autem vel eum iriure dolor<br>
-        in hendrerit in vulputate velit</a></li>
-   </div>
-  </ul>
-  <div class="contact-wrap-row">
-    <ul>
-      <li><img src="./images/contact- (2).svg"></li>
-      <li class="title">Call Us</li>
-      <li class="contact-paragraph"><a href="tel:+7 987 654-32-10">+7 987 654-32-10</a></li>
-      <li class="contact-paragraph"> <a href="tel:+7 123 456-78-90">+7 123 456-78-90</a></li>
-  </div>
-  </ul>
-  <div class="contact-wrap-row">
-    <ul>
-      <img src="./images/contact- (3).svg">
-        <li class="title">Email Us</li>
-        <li class="contact-paragraph"><a href="mailito:example@example.com">example@example.com</a></li>
-        <li class="contact-paragraph"><a href="mailito:example@example.com">example@example.com<a></li>
-  </div>
-</div>
-  </ul>
-   </section>
+  <section id="contacts" class="contact-section" aria-labelledby="contacts-heading">
+      <h2  class="contact-title">Contacts</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <img src="./images/contact- (1).svg">
+          <h3 class="title">Visit Us</h3>
+          <p class="contact-paragraph">Duis autem vel eum iriure dolor 
+            <br>in hendrerit in vulputate velit.</p>
+        </div>
+        <div class="contact-item">
+          <img src="./images/contact- (2).svg">
+          <h3 class="title">Call Us</h3>
+           <p class="contact-paragraph"><a href="#">+1 789 6543 10-96</a><br/>
+            <a href="#">+1 789 6543 10-96</a></p>
+        </div>
+        <div class="contact-item">
+          <img src="./images/contact- (3).svg">
+          <h3 class="title">Email Us</h3>
+          <p class="contact-paragraph"><a href="mailto:expert@lioniclaw.com">expert@lioniclaw.com</a><br />
+            <a href="mailto:support@lioniclaw.com">support@lioniclaw.com</a></p>
+        </div>
+      </div>
+    </section>
    <hr class="divider">
  <section id="join" class="join-section"  aria-labelledby="join-heading">
   <div class="join-content">
@@ -309,6 +302,7 @@
    </section>
       <ul class="footer-list">
   <li><a href="#" class="footer-title">About Us</a></li>
+  <li><a href="#" class="footer-title">Contact Us</a></li>
   <li><a href="#" class="footer-title">Privacy Policy</a></li>
   <li><a href="#" class="footer-title">Terms Condition</a></li>
      <li>
