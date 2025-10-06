@@ -75,26 +75,7 @@ h1{
 p{
     font-weight: 400; 
 }
-:root{
-    --defualt-bg:#fff;
-  --hover-background: #3172B9;
-  --focus-background: #71A7E2;
-  --active-background: #0E3B6C;
-  --contactors--color: #000000;
-  --hover-color:  #ffffff;
-  --focus-color: #ffffff;
-  --active-color:#ffffff;
-  --hover-background-button:#71A7E2;
-  --focus-background-button:#0E3B6C;
-  --hover-color-contact-paragraph:#0E3B6C;
-  --hover-color-nav:#3172B9;
-  --hover-color-contact:#71A7E2;
-  --focus-color-contact:#0000;
-  --hover-backgrond-color-join:#71A7E2;
-   --color-primary: #3172B9;
-    --color-hover:#71A7E2;
-} 
-  
+
   .want{
     border-radius: 3px;
     padding: 15px 30px 15px 30px;
@@ -108,14 +89,14 @@ p{
     text-align: center;
 }
   .want:hover {
-    background-color: var(--color-hover);
+    background-color: #71A7E2;
   }
 
   .want:focus-visible {
     outline-offset: 4px;
   }
   .want:active {
-    background-color: var(--active-background);
+    background-color:#0E3B6C;
   }
   
 
@@ -135,11 +116,11 @@ p{
   color: #71A7E2;
 }
 .nav-list a:focus-visible{
-    outline: 1px solid var(--color-hover);
+    outline: 1px solid #71A7E2;
   }
  .nav-list a:active{
-    color: var(--color-primary);
-    border-bottom: 3px solid var(--color-primary);
+    color: #3172B9;
+    border-bottom: 3px solid #3172B9;
   }
 .hero-contact{
    background-image: url(../images/first-bg\ 1.svg);
@@ -206,14 +187,14 @@ p{
      font-size: 11px;
 }
 .primary-2:hover {
-    background-color: var(--color-hover);
+    background-color:#71A7E2;
   }
   .primary-2:focus-visible {
-    outline: 1px solid var(--color-hover);
+    outline: 1px solid #71A7E2;
     outline-offset: 4px;
   }
   .primary-2:active {
-    background-color: var(--active-background);
+    background-color: #0E3B6C;
   }
 /* services*/
 .services-list-item{
@@ -238,9 +219,9 @@ p{
     gap:30px;
 }
 .services-item-block{
-border-radius: 5px;
-    border: 1px solid #787878;
-    border-color: #E4E4E4;
+  border-radius: 5px;
+  border: 1px solid #787878;
+  border-color: #E4E4E4;
     padding: 60px 30px;
     text-align: center;
      transition:2s ease;
@@ -323,30 +304,30 @@ background-color:#3172B9;
       line-height: 130%;
 }
 .articles-item {
-  background-color: var(--default-background);
-  color: var(--contactors-color);
+  background-color:#ffffff;
+  color: #000000;
   transition: 0.5s ease;
   cursor: pointer;
 }
 .articles-item:hover {
-  background-color: var(--hover-background);
+  background-color: #3172B9;
 }
 .articles-item:focus {
-  background-color: var(--focus-background);
+  background-color: #71A7E2;
   outline: none;
 }
 .articles-item:hover{
-color:var(--hover-color);
+color:#ffffff;
 }
 .articles-item:hover .articles-paragraph{
-color:var(--hover-color);
+color:#ffffff;
 transition: 2s ease;
 }
 .articles-item:active {
-  background-color: var(--active-background);
+  background-color: #0E3B6C;
 }
 .articles-item:hover .articles-wraper{
-    color:var(--hover-color);
+    color:#ffffff;
     transition:2s ease ;
 }
 .articles-item:focus{
@@ -530,13 +511,13 @@ height: 52px;
   transition: 0.5s ease;
 } 
 .form-submit:hover {
-    background-color: var(--color-hover);
+    background-color: #71A7E2;
   }
   .form-submit:focus-visible {
     outline-offset: 3px;
   }
   .form-submit:active {
-    background-color: var(--active-background);
+    background-color: #0E3B6C;
   }
   .left-fields input:hover,
 .left-fields select:hover,
@@ -615,11 +596,11 @@ select:open::picker-icon {
   color: #71A7E2;
 }
 .footer-title:focus-visible{
-    outline: 1px solid var(--color-hover);
+    outline: 1px solid #71A7E2;
   }
  .footer-title:active{
-    color: var(--color-primary);
-    border-bottom: 3px solid var(--color-primary);
+    color: #3172B9;
+    border-bottom: 3px solid #3172B9;
   }
   .img:hover,
 .icon:hover{
@@ -686,6 +667,11 @@ stroke:#71A7E2;
     text-align: left;    
     margin: 0 15px 0 15px; 
     font-size: 14px;
+     height:222px;
+    padding:20px 15px;
+  }
+  .services-item-block{
+    padding:20px 15px;
   }
   .services-list-row {
     display: grid;
@@ -694,7 +680,7 @@ stroke:#71A7E2;
     padding: 0 15px;
   }
   /* article */
-  .article-section{
+   .article-section{
     margin-top: 60px;
     margin-bottom:60px;
   }
